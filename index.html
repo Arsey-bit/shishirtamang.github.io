@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/444336cf75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main-header">
+        <div class="container">
+            <nav>
+                <img src="./Images/logonew.png" class="logo">
+                <ul>
+                    <li><a href="#main-header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 
+                </ul>
+    
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Upper Senior-Student</p>
+                    <h1>Hi, I'm <span>Shishir</span> Tamang<br> from USA</h1>
+                </div>
+                <div class="header-image">
+                    <img src="./Images/Untitled (3).png" alt="Shishir Image">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="./Images/Untitled (2).png" alt="Shishir's Image">
+                </div>
+                <div class="about-info">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I'm Shishir Tamang, a Computer Science major with a minor in Business Administration at York College, City University of New York. I'm passionate about blending technology with creativity, and I'm actively working toward a career in graphic design.
+                        <br><br>
+                        Currently, I’m gaining hands-on experience through the Tech Incubator program at Queens College, where I’m sharpening my skills in digital design and visual communication. I have strong proficiency in Canva and Adobe Photoshop, and I continue to build a foundation in programming with C++ and Java to support my creative projects with technical depth.
+                        <br><br>
+                        I thrive at the intersection of design and technology, and I'm always exploring new ways to bring innovative ideas to life through compelling visuals. Whether I’m designing for web, print, or branding, my goal is to create work that is both functional and visually striking.
+                    </p>
+                    <div class="tab-nav">
+                        <p class="tab-item active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-item" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-item" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic skills</span><br>designing posters, social media content & digital graphics</li>
+                            <li><span>Video skills</span><br>editing videos for YouTube, reels & presentations</li>
+                            <li><span>UI skills</span><br>crafting clean and simple web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Tech Incubator at Queens College (TIQC) — Graphic Design Intern</span><br>January 2025 – Present <br>
+                                <ul>
+                                    <li>- Collaborated directly with clients during meetings to gather requirements,
+                                        present ideas, and refine design solutions.</li>
+                                    <li>- Designed a professional property flyer for a real estate client, delivering a
+                                        targeted marketing piece that met brand standards.</li>
+                                        <li>- Produced digital assets for marketing campaigns, including social media
+                                            visuals and promotional materials.</li>
+                                        <li>- Developed strong communication and project management skills through
+                                            hands-on client projects.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>York College, City University of New York
+                                Bachelor of Science in Computer Science | Minor in Business Administration</span><br>Expected Graduation: May 2025 <br>
+                                <ul>
+                                    <li>- Relevant Coursework: Web Development, Graphic Design, Programming
+                                        Fundamentals (C++, Java), Business Communication.</li>
+                                </ul>
+                            </li>
+                            <li><span>LaGuardia Community College
+                                Associate Degree</span><br>Dean's List Honoree (GPA: 3.9)<br>
+                                <ul>
+                                    <li>- Graduated with high honors, demonstrating academic excellence and
+                                        dedication to computer science .</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-grid">
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Description for the Graphic Design</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Description for the UX/UI Design</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Description for the Web Development</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- Project 1 -->
+                <div class="work-box">
+                    <h3>Project 1</h3>
+                    <p>Business Consulting Services – Logo Design</p>
+                    <p>Created a clean, professional logo that was approved and adopted by the client to represent their brand across digital and print materials.</p>
+                    <img src="./Images/Project 1.png" alt="Project 1">
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="work-box">
+                    <h3>Project 2</h3>
+                    <p>EDMNYC Planet – Event Flyer</p>
+                    <p>Designed a bold, vibrant flyer to promote an EDM event in NYC, capturing the energy of the scene and used for both digital and print promotion.</p>
+                    <img src="./Images/Project 2.png" alt="Project 2">
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="work-box">
+                    <h3>Project 3</h3>
+                    <p>Real Estate Property Flyer</p>
+                    <p>Designed a sleek, informative flyer for a real estate customer to showcase a property listing, highlighting key features and visuals to attract potential buyers.</p>
+                    <img src="./Images/Project 3.png" alt="Project 3">
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <div id="contact">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="container">
+            
+            <div class="contact-info">
+               
+                <p><i class="fa-solid fa-paper-plane"></i> Shishirtamang160@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9295079176</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100007851765812&mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="Https://www.instagram.com/arsey_121"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shishir-tamang-784477184/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./Images/Resume.pdf.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Shishir <i class="fa-solid fa-heart"></i> Tamang</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-item");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        document.querySelector('.fa-bars').addEventListener('click', () => {
+            document.querySelector('ul').classList.toggle('active');
+        });
+        document.querySelector('.fa-circle-xmark').addEventListener('click', () => {
+            document.querySelector('ul').classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbytvKvwONnTigdPNIneDZjMCCFVIOYeoK-r5dmQbBbqcbAFg2hpe0_98k80Q6GeJMCFpQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
